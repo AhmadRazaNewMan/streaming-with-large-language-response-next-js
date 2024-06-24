@@ -61,7 +61,7 @@ export default function Home() {
         {messages.map((m, index) => (
           <div
             key={index}
-            className={`relative p-4 rounded-lg shadow-lg max-w-lg transition-transform duration-300 transform-gpu hover:scale-80 ${m.role === "user" ? "bg-purple-700 text-white ml-auto" : "bg-gray-100 text-gray-900"} `}
+            className={`relative p-4 rounded-lg shadow-lg w-auto transition-transform duration-300 transform-gpu hover:scale-80 ${m.role === "user" ? "bg-purple-700 text-white ml-auto" : "bg-gray-100 text-gray-900"} `}
           >
             <Markdown text={m.content} />
             {m.role === 'user' ? (
